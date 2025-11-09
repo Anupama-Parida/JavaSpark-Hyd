@@ -1,0 +1,44 @@
+/* General styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Hero section */
+.hero {
+  background: url('images/photo1.jpg') center/cover no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero > div {
+  position: relative;
+  z-index: 2;
+}
+
+/* Navbar */
+.navbar {
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for gallery images */
+#gallery img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+}
